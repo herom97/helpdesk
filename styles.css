@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #0f172a;
+  background-color: #f8fafc;
+}
+
+
+/* Hele navbaren */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 32px;
+
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+
+/* Logo og navn */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.logo-img {
+
+  width: 84px;
+  height: 54px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+
+.logo-name {
+  margin: 0;
+
+  color: #4f46e5;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* Menybeholderen */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin: 0;
+  padding: 6px;
+
+  list-style: none;
+
+  background-color: #eef2ff;
+  border: 1px solid #c7d2fe;
+  border-radius: 25px;
+}
+
+
+/* Menylenker */
+.nav-menu a {
+  display: block;
+
+  padding: 10px 14px;
+
+  color: #475569;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+
+  border-radius: 20px;
+}
+
+
+/* Effekt for når musepekeren er over en lenke */
+.nav-menu a:hover {
+  color: #4f46e5;
+  background-color: #ffffff;
+}
+
+
+/* Open a ticket*/
+.nav-menu li:nth-child(2) a {
+  color: #6e1772;
+}
+
+
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+/* Felles for knappene*/
+.nav-buttons button {
+  padding: 11px 16px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+
+/* Contact an agent-uferdig*/
+.agent {
+  color: #4f46e5;
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 10px 15px;
+  border-color: #4f46e5;
+}
+
+
+.agent:hover {
+  background-color: #eef2ff;
+}
+
+
+/* Sign in-uferdig*/
+.signin {
+  color: #ffffff;
+  background-color: #4f46e5;
+  border-radius: 15px;
+  padding: 10px 15px;
+
+}
+
+
+.signin:hover {
+  background-color: #4338ca;
+}
+
+
+/* Menyikonet skjules på store skjermer-uferdig */
+.menu-toggle {
+  display: none;
+
+  padding: 8px;
+
+  color: #4f46e5;
+  background-color: transparent;
+  border: 0;
+
+  font-size: 28px;
+
+  cursor: pointer;
+}
+
+
+/* Mobil og tabletversjon-uferdig */
+@media (max-width: 1400px) {
+  nav {
+    padding: 12px 20px;
+  }
+
+  .logo-name {
+    display: none;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+
+.info-container-describtion {
+  padding: 40px 20px;
+}
+
+
+.info-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 32px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 30px;
+}
+
+
+
+.support-label {
+  display: inline-block;
+
+  padding: 10px 15px;
+
+  color: #4f46e5;
+  background-color: #eef2ff;
+  border: 2px solid #c7d2fe;
+  border-radius: 40px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+
+.support-titel {
+  color: #0f172a;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+
+
+.support-describtion {
+  color: #475569;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
