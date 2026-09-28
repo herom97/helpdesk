@@ -400,3 +400,91 @@ nav {
     grid-template-columns: 1fr;
   }
 }
+
+
+.guide {
+  padding: 40px 20px;
+  margin-top: 40px;
+  background-color: #efeff6;
+  border-top: 1px solid #e2e8f0;
+}
+
+.guide-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.guide-title {
+  margin: 0;
+  text-align: center;
+  color: #0f172a;
+  font-family: "Outfit", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.guide-description {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #475569;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.guides-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.guides-card {
+  padding: 44px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.guides-count {
+  color: #b4b1ea;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+
+
+}
+
+.guides-card h3 {
+  margin-top: 10px;
+  margin-bottom: 12px;
+  color: #475569;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+}
+
+.guides-card p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #475569;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+
+
+@media (max-width: 900px) {
+  .categories-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
